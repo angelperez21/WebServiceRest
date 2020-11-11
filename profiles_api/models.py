@@ -19,6 +19,15 @@ class UserProfileManagerU(BaseUserManager):
         user.save(using=self.db)
         return user
 
+    def create_superuser(self, email, name, passwd):
+        user = self.create_user(email, name, passwd)
+
+        user.is_superuser = True
+        user.is_staff = True
+        user.save(using=self.db)
+
+        return user
+
 class UserProfile (AbstractUser,PermissionsMixin):
     """ Modelo Base de Datos para usarios en el sistema """
     email = models.EmailField(max_length=255,unique=True)
