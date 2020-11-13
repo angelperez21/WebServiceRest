@@ -10,15 +10,6 @@ def index():
     return render_template('index.php')
 
 
-@app.route('/ping')
-def ping():
-    return jsonify(
-        {
-            'message': 'Pong'
-        }
-    )
-
-
 @app.route('/products')
 def getProducts():
     return jsonify(products)
@@ -31,9 +22,7 @@ def getProduct(product_name):
     ]
     if (len(product_found) > 0):
         return jsonify(
-            {
-                "product": product_found[0]
-            }
+            product_found
         )
     return jsonify(
         {
