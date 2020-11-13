@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify
 from products import products
+
 app = Flask(__name__)
 
 
@@ -37,5 +38,14 @@ def getProduct(product_name):
     return jsonify(
         {
             "product": "Producto no encontrado"
+        }
+    )
+
+
+@app.route('/ejemplo/<string:name>')
+def ejemplo(name):
+    return jsonify(
+        {
+            'menssge': f'Hola {name} como estas'
         }
     )

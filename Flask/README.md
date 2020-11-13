@@ -41,4 +41,3 @@ y activamos el entorno de virtual de las siguente manera
 y finalmete instalamos el framework Django y sus dependencias las cuales se encuentran el archivo requirements.txt para poder hacer esto lo realizamos de la siguiente manera
 
 - pip install -r requirements.txt
-
