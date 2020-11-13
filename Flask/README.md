@@ -5,7 +5,6 @@ Los requerimientos se encuentran dentro del archivo requirements.txt sin esas de
 
 - pip install -r requirements.txt
 
-### No es necesario pero si recomendable 
 Activa tu entorno virtual para que de esta manera no tengas problemas con dependencias de otros proyecto que pudieras tener, para poder activarlo es necesario tener instalado virtalenv en caso de no tenerlo lo puedes hacer de la siguiente manera
 En linux se puede instalar desde linea de comandos de las siguietes maneras
 
@@ -19,6 +18,7 @@ Derivados de Centos o con gestor de paquetes yum:
 Derivados de Arch linux 
 - sudo pacman -Sy python-pip
 
+### No es necesario pero si recomendable 
 Una vez instalado el gestor de paquetes pip procederemos a instalar virtualenv el cual nos premitira tener separadas nuestras dependencias entre aplicaciones python, se puede instalar con el gestor pip o con el de la distribución que se este utilizando
 
 Con el gestor de paquetes de python

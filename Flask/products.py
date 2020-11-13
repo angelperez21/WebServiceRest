@@ -1,21 +1,21 @@
-products=[
+products = [
     {
-        "name":"laptop",
+        "name": "laptop",
         "price": 800,
         "quantity": 5
     },
     {
-        "name":"mouse",
+        "name": "mouse",
         "price": 800,
         "quantity": 5
     },
     {
-        "name":"ssd",
+        "name": "ssd",
         "price": 800,
         "quantity": 5
     },
     {
-        "name":"hdd",
+        "name": "hdd",
         "price": 800,
         "quantity": 5
     }
