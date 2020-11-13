@@ -1,8 +1,12 @@
-# WebServiceRest
-## Bienvenido
+# Web service REST sencillo con Flask
+## Bienvenido 
 
-Para poder utilzar y desarrollar con el framework Django es necesario contar con python instalado, así como del gestor de paquetes de python, pip.
+Los requerimientos se encuentran dentro del archivo requirements.txt sin esas dependencias no se podrá levantar el servidor para poder realizar las peticiones desde flask para poder instalarlas es con el siguente comando
 
+- pip install -r requirements.txt
+
+### No es necesario pero si recomendable 
+Activa tu entorno virtual para que de esta manera no tengas problemas con dependencias de otros proyecto que pudieras tener, para poder activarlo es necesario tener instalado virtalenv en caso de no tenerlo lo puedes hacer de la siguiente manera
 En linux se puede instalar desde linea de comandos de las siguietes maneras
 
 Derivados de Debian o con gestor de paquetes apt:
