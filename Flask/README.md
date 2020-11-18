@@ -1,10 +1,6 @@
 # Web service REST sencillo con Flask
 ## Bienvenido 
 
-Los requerimientos se encuentran dentro del archivo requirements.txt sin esas dependencias no se podrá levantar el servidor para poder realizar las peticiones desde flask para poder instalarlas es con el siguente comando
-
-- pip install -r requirements.txt
-
 Activa tu entorno virtual para que de esta manera no tengas problemas con dependencias de otros proyecto que pudieras tener, para poder activarlo es necesario tener instalado virtalenv en caso de no tenerlo lo puedes hacer de la siguiente manera
 En linux se puede instalar desde linea de comandos de las siguietes maneras
 
@@ -22,7 +18,7 @@ Derivados de Arch linux
 Una vez instalado el gestor de paquetes pip procederemos a instalar virtualenv el cual nos premitira tener separadas nuestras dependencias entre aplicaciones python, se puede instalar con el gestor pip o con el de la distribución que se este utilizando
 
 Con el gestor de paquetes de python
-p- ip install virtualenv
+- pip install virtualenv
 
 Con el gestor de paquetes apt (derivados de Debian)
 - sudo apt-get install python-virtualenv 
@@ -38,6 +34,7 @@ Una vez instalado virtualenv se debe de crear el entorno virtual de python de la
 y activamos el entorno de virtual de las siguente manera 
 - source nameproject/bin/activate
 
-y finalmete instalamos el framework Django y sus dependencias las cuales se encuentran el archivo requirements.txt para poder hacer esto lo realizamos de la siguiente manera
+y finalmete instalamos el framework Flask y sus dependencias las cuales se encuentran el archivo requirements.txt para poder hacer esto lo realizamos de la siguiente manera
 
 - pip install -r requirements.txt
+
