@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify
 from products import products
 
 
@@ -17,7 +17,7 @@ def index():
 
 @app.route('/documentacion')
 def documentacion():
-    return render_template('documentacion.php')
+    return render_template('documentacion.html')
 
 
 # Por defecto el servidor realiza llamadas por medio de GET
@@ -58,18 +58,4 @@ def ejemplo(name):
             'menssge': f'Hola {name} como estas'
         }
     )
-
-
-@app.route('/price/<int:price>', methods=['POST'])
-def method_name(price):
-    if request.method == 'POST':
-        product_found = [
-            product for product in products if product['price'] <= price
-        ]
-    return jsonify(
-        {
-            product_found
-        }
-    )
-
 

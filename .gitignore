@@ -2,3 +2,4 @@
 Flask/.flask_rest
 Django/.django
 __pycache__
+Django/*
