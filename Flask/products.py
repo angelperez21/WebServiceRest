@@ -1,3 +1,4 @@
+# Base de datos local para no tener que estar haciendo la conexión a alguna remota
 products = [
     {
         "name": "laptop",
