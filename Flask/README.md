@@ -4,7 +4,7 @@
 
 ### Instalación de Python Package Installer
 
-Para que puedas activar tu entorno virtual y que de esta manera no tengas problemas con dependencias de otros proyecto que pudieras tener, es necesario tener instalado virtalenv el cual se instala con el Python Package Installer o mejor conocido como pip, este lo puedes intalar de las siguientes maneras:
+Para que puedas activar tu entorno virtual y que de esta manera no tengas problemas con dependencias de otros proyecto que pudieras tener, es necesario tener instalado virtualenv el cual se instala con el Python Package Installer o mejor conocido como pip, este lo puedes intalar de las siguientes maneras:
 
 #### Para linux
 
@@ -32,7 +32,7 @@ Aunque en algunas ocasiones el instalador de python para windows viene por defec
 
 ### Instalación de virtualenv
 
-Una vez instalado el gestor de paquetes pip procederemos a instalar virtualenv el cual nos premitira tener separadas nuestras dependencias entre aplicaciones python, se puede instalar con el mismo gestor pip o con el de la distribución que se este utilizando
+Una vez instalado el gestor de paquetes pip procederemos a instalar virtualenv el cual nos permitirá tener separadas nuestras dependencias entre aplicaciones python, se puede instalar con el mismo gestor pip o con el de la distribución que se esté utilizando
 
 #### Con el gestor de paquetes de python
 
@@ -56,10 +56,10 @@ Una vez instalado virtualenv se debe de crear el entorno virtual de python de la
 
 - virtualenv nameproject --python=python3
 
-donde nameproject es el nombre de tu proyecto. Activamos el entorno de virtual de las siguente manera
+donde nameproject es el nombre de tu proyecto. Activamos el entorno de virtual de las siguiente manera
 
 - source nameproject/bin/activate
 
-y finalmete instalamos el framework Flask y sus dependencias las cuales se encuentran el archivo requirements.txt para poder hacer esto lo realizamos de la siguiente manera
+y finalmente instalamos el framework Flask y sus dependencias las cuales se encuentran el archivo requirements.txt para poder hacer esto lo realizamos de la siguiente manera
 
 - pip install -r requirements.txt
