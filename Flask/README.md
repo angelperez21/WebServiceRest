@@ -63,3 +63,23 @@ donde nameproject es el nombre de tu proyecto. Activamos el entorno de virtual d
 y finalmente instalamos el framework Flask y sus dependencias las cuales se encuentran el archivo requirements.txt para poder hacer esto lo realizamos de la siguiente manera
 
 - pip install -r requirements.txt
+
+### Levantamiento del servidor
+
+Para este apartado se puede hacer de dos formas.
+
+Para la primera y se recomienda descomentar el if que viene al final:
+
+- python app.py
+
+Para la segunda es de la siguiente forma:
+
+exportamos las variables de entorno
+
+- export FLASK_APP=app.py FLASK_ENV=development FLASK_RUN_PORT=8000
+
+y a continuación activamos el servidor
+
+- flask run
+
+cabe mencionar que para ambas formas es necesario indicar la ruta en donde se encuentre el fichero app.py o dirigese al directorio donde se encuentre para poder ejecutarla

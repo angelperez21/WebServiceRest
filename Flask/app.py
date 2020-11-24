@@ -6,7 +6,8 @@ from products import products
 app = Flask(__name__)
 
 
-# jsonify nos permite regresar valores en formato JSON
+"""jsonify nos permite regresar valores en formato JSON"""
+
 
 # Definición de rutas
 @app.route('/')
@@ -15,6 +16,7 @@ def index():
     return render_template('index.html')
 
 
+# Ruta que retorna la documentación del web server
 @app.route('/documentacion')
 def documentacion():
     return render_template('documentacion.html')
@@ -42,10 +44,10 @@ def getProduct(product_name):
             product_found
         )
     return jsonify([
-            {
-                "product": "Producto no encontrado"
-            }
-        ]
+        {
+            "product": "Producto no encontrado"
+        }
+    ]
     )
 
 
@@ -58,3 +60,15 @@ def ejemplo(name):
             'menssge': f'Hola {name} como estas'
         }
     )
+
+
+@app.route('/products', methods=['POST'])
+def addItem():
+
+    return 'recibido'
+
+
+"""
+if __name__ == "__main__":
+    app.run(debug=True, port=8000)
+"""
