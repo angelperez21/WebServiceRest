@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web service REST Básico</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
 </head>
 
 <body>
@@ -13,13 +13,12 @@
         <h1>Documentación web server REST con flask</h1>
     </div>
     <div class="block">
+        <h3 class="Docu">
+            Bienvenido a la documentación de el web server rest desarrollado con Flask
+        </h3>
+        <img src="{{ url_for('static', filename='images/index.png')}}" alt="indice" class="center" />
         <p>
-            <h3 class="Docu">
-                Bienvenido a la documentación de el web server rest desarrollado con Flask
-            </h3>
-        </p>
-        <p>
-            La ruta 127.0.0.1:8000/products realiza una petición de GET al servidor y este retorna un respuesta de tipo JSON con todos los productos que tiene la DB
+            <a href="http://localhost:8000/products">http://localhost/products</a> esta hace una petición de tipo get al server recibiendo un JSON con todos los productos que tiene la DB
         </p>
     </div>
 </body>

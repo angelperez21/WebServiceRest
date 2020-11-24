@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request, redirect
 from products import products
 
 
@@ -35,7 +35,7 @@ def getProducts():
 def getProduct(product_name):
     # obtenemos solo el producto solicitado
     product_found = [
-        product for product in products if product['name'] == product_name
+        product for product in products if product['type'] == product_name
     ]
     # Si el tamaño de la lista es mayor a 0 entonces existen productos
     if (len(product_found) > 0):
@@ -51,21 +51,31 @@ def getProduct(product_name):
     )
 
 
-# Ruta de ejemplo en caso de no colocar el tipo de dato se asignara solo por
-# defecto
-@app.route('/ejemplo/<string:name>')
-def ejemplo(name):
-    return jsonify(
-        {
-            'menssge': f'Hola {name} como estas'
-        }
-    )
-
-
-@app.route('/products', methods=['POST'])
+# Ruta para agregar información por medio del metodo post
+# Desde el formulario recibira una serie de valores y para esto es necesario
+# que los inputs del formulario tengan los siguientes "name"
+# - type -> para el tipo de producto
+# - price -> para el precio del producto
+# - quantity -> para la cantidad del producto
+# - brand -> para la marca del producto
+@app.route('/add_products', methods=['POST'])
 def addItem():
-
-    return 'recibido'
+    if request.method == 'POST':
+        name = request.form['type']
+        pice = request.form['price']
+        quantity = request.form['quantity']
+        brand = request.form['brand']
+        # Agregamos lo nuevos valores a nuestra base de datos
+        products.append(
+            {
+                "type": name,
+                "price": pice,
+                "quantity": quantity,
+                "brand": brand
+            }
+        )
+        # La retornamos a nuestro servidor
+    return redirect('http://127.0.0.1/exampleRest/')
 
 
 """

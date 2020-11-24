@@ -1,69 +1,77 @@
 # Base de datos local para no tener que estar haciendo la conexión a alguna remota
 products = [
     {
-        "name": "laptop",
+        "type": "laptop",
         "price": 5800,
         "quantity": 15,
         "brand": "hp"
     },
     {
-        "name": "laptop",
-        "price": 5800,
+        "type": "laptop",
+        "price": 5000,
         "quantity": 15,
         "brand": "dell"
     },
     {
-        "name": "laptop",
-        "price": 5800,
+        "type": "laptop",
+        "price": 6800,
         "quantity": 15,
         "brand": "toshiba"
     },
     {
-        "name": "laptop",
-        "price": 5800,
+        "type": "mouse",
+        "price": 80,
         "quantity": 15,
         "brand": "compac"
     },
     {
-        "name": "mouse",
-        "price": 80,
-        "quantity": 35
+        "type": "mouse",
+        "price": 180,
+        "quantity": 15,
+        "brand": "compac"
     },
     {
-        "name": "ssd",
-        "price": 800,
-        "quantity": 5
-    },
-    {
-        "name": "ssd",
-        "price": 800,
-        "quantity": 5
-    },
-    {
-        "name": "ssd",
-        "price": 800,
-        "quantity": 5
-    },
-    {
-        "name": "hdd",
-        "price": 800,
-        "quantity": 10
-    },
-    {
-        "name": "keyboard",
+        "type": "mouse",
         "price": 200,
-        "quantity": 5
+        "quantity": 15,
+        "brand": "compac"
     },
     {
-        "name": "processor",
-        "price": 3800,
-        "quantity": 5
+        "type": "hard disk",
+        "price": 580,
+        "quantity": 15,
+        "brand": "compac"
     },
     {
-        "name": "ram",
-        "price": 400,
-        "quantity": 8
-    }
+        "type": "hard disk",
+        "price": 500,
+        "quantity": 15,
+        "brand": "compac"
+    },
+    {
+        "type": "hard disk",
+        "price": 800,
+        "quantity": 15,
+        "brand": "compac"
+    },
+    {
+        "type": "keyboard",
+        "price": 150,
+        "quantity": 15,
+        "brand": "compac"
+    },
+    {
+        "type": "keyboard",
+        "price": 500,
+        "quantity": 15,
+        "brand": "compac"
+    },
+    {
+        "type": "keyboard",
+        "price": 300,
+        "quantity": 15,
+        "brand": "compac"
+    },
 ]
 
 user = [
