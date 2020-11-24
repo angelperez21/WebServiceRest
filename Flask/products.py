@@ -73,26 +73,3 @@ products = [
         "brand": "compac"
     },
 ]
-
-user = [
-    {
-        'user': 'angel',
-        'passwd': '1234'
-    },
-    {
-        'user': 'victor',
-        'passwd': '1234'
-    },
-    {
-        'user': 'paula',
-        'passwd': '1234'
-    },
-    {
-        'user': 'marcel',
-        'passwd': '1234'
-    },
-    {
-        'user': 'ricardo',
-        'passwd': '1234'
-    },
-]

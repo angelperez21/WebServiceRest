@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web service REST Básico</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
-</head>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="head">
-        <h1>Documentación web server REST con flask</h1>
+      <h1>Documentación web server REST con flask</h1>
     </div>
     <div class="block">
-        <h3 class="Docu">
-            Bienvenido a la documentación de el web server rest desarrollado con Flask
-        </h3>
-        <img src="{{ url_for('static', filename='images/index.png')}}" alt="indice" class="center" />
-        <p>
-            <a href="http://localhost:8000/products">http://localhost/products</a> esta hace una petición de tipo get al server recibiendo un JSON con todos los productos que tiene la DB
-        </p>
+      <h3 class="Docu">
+        Bienvenido a la documentación de el web server rest desarrollado con
+        Flask
+      </h3>
+      <img
+        src="{{ url_for('static', filename='images/index.png')}}"
+        alt="indice"
+        class="center"
+      />
+      <p>
+        <a href="http://localhost:8000/products">http://localhost/products</a>
+        esta hace una petición de tipo get al server recibiendo un JSON con
+        todos los productos que tiene la DB
+      </p>
     </div>
-</body>
-
+  </body>
 </html>
