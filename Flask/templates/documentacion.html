@@ -1,34 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web service REST Básico</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/styles.css') }}"
-    />
-  </head>
+    <style>
+      </style> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-  <body>
-    <div class="head">
-      <h1>Documentación web server REST con flask</h1>
-    </div>
-    <div class="block">
-      <h3 class="Docu">
-        Bienvenido a la documentación de el web server rest desarrollado con
-        Flask
-      </h3>
-      <img
-        src="{{ url_for('static', filename='images/index.png')}}"
-        alt="indice"
-        class="center"
-      />
-      <p>
-        <a href="http://localhost:8000/products">http://localhost/products</a>
-        esta hace una petición de tipo get al server recibiendo un JSON con
-        todos los productos que tiene la DB
+      body {
+        margin:0;}
+      
+      .navbar {
+        overflow: hidden;
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      .navbar a:hover {
+        background: #ddd;
+        color: black;
+      }
+      
+      .main {
+        padding: 16px;
+        margin-top: 30px;
+        height: 1500px; /* Used in this example to enable scrolling */
+      }
+      .cuerpo {
+        background-color: white; width: 75%; margin: auto;
+      }
+      p {
+        padding-left: 30px;
+      }
+      </style>
+</head>
+
+<body style="background-color: #dedede; font-family: 'Lato', sans-serif;">
+  <div class="navbar">
+    <a href="/">atrás</a>
+    <h2 style="color: white; text-align: center;">Documentación web server REST con flask</h2>
+  </div>
+  <div class="main">
+   
+  <div class="cuerpo">
+    <br>
+      <h1 style="text-align: center; color: black;">
+          Bienvenido a la documentación de el web server rest desarrollado con Flask
+      </h1>
+      <hr>
+      <img src="{{ url_for('static', filename='images/Agreinfo.png')}}" alt="indice" class="center" />
+
+      <p style="padding-left: 25%;">
+        Definición de rutas
       </p>
-    </div>
-  </body>
+    <img src="{{ url_for('static', filename='images/Agreinfo.png')}}" alt="indice" class="center" />
+    <p class="a_info">
+      Como se puede ver primero esta la ruta para agregar información por medio del metodo POST.
+      Despues los datos seran recopilados por medio de un formulario y posteriormente seran enviados a la base de datos,
+      por ultimo  estos datos seran retornados al servidor.
+      Los datos recopilados son name, price, quantity y brand.
+
+    </p>
+    <img src="{{ url_for('static', filename='images/put.png')}}" alt="indice" class="center" />
+    <p class="put">
+      Como se muestra en la imagen primero se define una ruta que recibe una variable de tipo string
+      por medio de PUT, despues se obtiene el producto solicitado, se verifica si la lista no esta vacia y
+      realiza la respectiva modificación.
+    </p>
+
+      <img src="{{ url_for('static', filename='images/delet.png')}}" alt="indice" class="center" />
+    <p class="delet">
+      Se define ruta para recibir una varible de tipo  string por medio de DELETE posteriormente
+      se obtiene el producto, se verifica si la lista no esta vacia y se realiza la accion requerida.
+    </p>
+
+    <p>A continuacion se muestra una aplicación con la cual se pueden ejecutar todos los metodos de HTTP
+      pero en nuestro caso solo se mostraran ejemplos con el metodo PUT Y DELETE.
+      Se hara uso de esta aplicación porque HTML no te permite hacer peticiones mediante PUT Y DELETE.
+    </p>
+
+      <img src="{{ url_for('static', filename='images/inso_put.png')}}" alt="indice" class="center" />
+
+      <p style="padding-left: 25%;">
+      Petición mediante PUT </p>
+
+      <img src="{{ url_for('static', filename='images/inso_delet.png')}}" alt="indice" class="center" />
+      <p style="padding-left: 25%;">
+        Petición mediante DELETE</p>
+
+
+    <p>
+        <a href="http://localhost:8000/products">http://localhost/products</a> esta hace referencia hace una petición de tipo get al server recibiendo un JSON con todos los productos que tiene la DB
+    </p>
+    <br>
+  </div>
+  </div>
+ 
+</body>
+
 </html>
